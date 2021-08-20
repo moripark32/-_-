@@ -1,8 +1,11 @@
 //import react and react dom libraries
 import React from "react";
 import ReactDOM from "react-dom";
-import ClassComponentStudyApp from "./ClassComponetStudy/ClassComponentStudyApp";
+import ListOfItem from "./ListOfItem/ListOfItem";
+//import ClassComponentStudyApp from "./ClassComponetStudy/ClassComponentStudyApp";
 //import PropsUnderstandingApp from "./PropsUnderstanding/PropsUnderstandingApp";
 
 //take the react component and show it on the screen
-ReactDOM.render(<ClassComponentStudyApp />, document.querySelector("#root"));
+ReactDOM.render(<ListOfItem />, document.querySelector("#root"));
+//ReactDOM.render(<ClassComponentStudyApp />, document.querySelector("#root"));
+// ReactDOM.render(<PropsUnderstandingApp />, document.querySelector("#root"));
