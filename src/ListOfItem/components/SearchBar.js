@@ -5,13 +5,13 @@ class SearchBar extends React.Component {
   //   onInputChange() {
   //     console.log("input typed inside");
   //   }
-  //   onInputClick() {
-  //     console.log("input clicked");
-  //   }
+  onFormSubmit(e) {
+    e.preventDefault();
+  }
   render() {
     return (
       <div className="ui segment">
-        <form className="ui form">
+        <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label>Image Search</label>
             <input
@@ -20,6 +20,8 @@ class SearchBar extends React.Component {
               onChange={(e) => {
                 this.setState({ term: e.target.value });
               }}
+              // controlled vs uncontrolled
+              // controlled : user 가 type하는 value값이 state값으로 들어와서
             />
           </div>
         </form>
