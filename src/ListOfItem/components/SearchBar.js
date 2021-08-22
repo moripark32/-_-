@@ -5,9 +5,10 @@ class SearchBar extends React.Component {
   //   onInputChange() {
   //     console.log("input typed inside");
   //   }
-  onFormSubmit(e) {
+  onFormSubmit = (e) => {
     e.preventDefault();
-  }
+    this.props.submitValue(this.state.term);
+  };
   render() {
     return (
       <div className="ui segment">
