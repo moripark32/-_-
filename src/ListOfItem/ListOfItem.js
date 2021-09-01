@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "./components/SearchBar";
 import unsplash from "../api/unsplash";
-import ImageList from "./ImageList";
+import ImageList from "./components/ImageList";
 
 class ListOfItem extends React.Component {
   state = { images: [] };
@@ -25,7 +25,7 @@ class ListOfItem extends React.Component {
     // console.log(response.data.results);
 
     //console.log(this); 여기서 this 는 class ListOfItem 이라는 컴포넌트 부모를 바라보고있는 this가 아니고
-    // 이 this가 콜백으로 불리고있는 searchbar라는 컴포넌트를 바라보고있음.
+    // 이 this가 콜백으로 불리고있는 searchbar라는 컴포넌트를 바라보고있음. 그래서 화살표 함수로 바꾸어줘야함
     this.setState({ images: response.data.results });
   };
   render() {
