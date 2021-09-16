@@ -2,15 +2,13 @@ import React from "react";
 import SeasonDisplay from "./SeasonDisplay";
 import Spinner from "./Spinner";
 
-// const ClassComponentStudyApp = () => {
+// const ClassComponentApp = () => {
 //   window.navigator.geolocation.getCurrentPosition(
 //     (position) => console.log(position),
 //     (err) => console.log(err)
 //   );
 //   return <div></div>;
-// };
-
-class ClassComponentStudyApp extends React.Component {
+class ClassComponentApp extends React.Component {
   //   constructor(props) {
   //     super(props);
   //     this.state = { lat: null, errorMessage:'' };
@@ -54,4 +52,4 @@ class ClassComponentStudyApp extends React.Component {
   }
 }
 
-export default ClassComponentStudyApp;
+export default ClassComponentApp;
